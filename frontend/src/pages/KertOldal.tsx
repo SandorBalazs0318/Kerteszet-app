@@ -21,7 +21,18 @@ const KertOldal = () => {
 
     return(
         <div>
-            
+            <p>
+                Név: {kertadatok?.Név}
+            </p>
+            <p>
+                Ár: {kertadatok?.Ár}
+            </p>
+            <p>
+                Évelő-e: {kertadatok?.Évelő_e}
+            </p>
+            <p>
+                Kategória: {kertadatok?.Kategória.fa}
+            </p>
         </div>
     )
 }
