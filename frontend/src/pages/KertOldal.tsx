@@ -34,8 +34,15 @@ const KertOldal = () => {
     <div>
       <p>Név: {kertadatok?.Név}</p>
       <p>Ár: {kertadatok?.Ár}</p>
+       <p>Új ár: <input 
+        type="string"
+        value={newar}
+        onChange={(e) => setNewAr(Number(e.target.value))}
+        placeholder="Add meg az új árat"
+        /></p>
       <p>Évelő-e: {kertadatok?.Évelő_e}</p>
       <p>Kategória: {kertadatok?.Kategória.fa}</p>
+      <button onClick={DeleteKert} style={{color: "red"}}>Törlés</button>
     </div>
   );
 };
